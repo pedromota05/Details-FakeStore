@@ -1,4 +1,7 @@
 import Head from "next/head";
+import eletronico from '../components/img/eletronicos.jpg';
+import joias from '../components/img/Capaprata.jpg';
+import roupas from '../components/img/roupas.jpg';
 
 export const CardsProduct = () => {
     return(
@@ -12,7 +15,7 @@ export const CardsProduct = () => {
         <div className="container mt-5 mb-3">
             <div className="row">
                 <div className="col-md-4">
-                    <div className="card-product card-electro p-3 mb-2">
+                    <div className="card-product card-electro p-3 mb-2" style={{backgroundImage: `url(${eletronico.src})`}}>
                         <div className="d-flex justify-content-between">
                             <div className="d-flex flex-row align-items-center zoom-product">
                                 <div className="icon-product"> <i className="fas fa-laptop" style={{fontSize: '21px'}}></i> </div>
@@ -24,7 +27,7 @@ export const CardsProduct = () => {
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div className="card-product card-joias p-3 mb-2">
+                    <div className="card-product card-joias p-3 mb-2" style={{backgroundImage: `url(${joias.src})`}}>
                         <div className="d-flex justify-content-between">
                             <div className="d-flex flex-row align-items-center zoom-product">
                                 <div className="icon-product"> <i className="fas fa-gem" style={{fontSize: '21px'}}></i> </div>
@@ -36,7 +39,7 @@ export const CardsProduct = () => {
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div className="card-product card-roupas p-3 mb-2">
+                    <div className="card-product card-roupas p-3 mb-2" style={{backgroundImage: `url(${roupas.src})`}}>
                         <div className="d-flex justify-content-between">
                             <div className="d-flex flex-row align-items-center zoom-product">
                                 <div className="icon-product"> <i className="fas fa-tshirt" style={{fontSize: '21px'}}></i> </div>

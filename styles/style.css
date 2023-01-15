@@ -123,21 +123,18 @@ a.page-number{
 }
 
 .card-electro{
-  background-image: url('../components/img/eletronicos.jpg');
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 .card-joias{
-  background-image: url('../components/img/Capaprata.jpg');
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 .card-roupas{
-  background-image: url('../components/img/roupas.jpg');
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
