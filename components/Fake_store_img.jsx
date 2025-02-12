@@ -7,13 +7,13 @@ export const Fake_store_img = () => {
     return(
         <>
         <section className="d-flex flex-column flex-md-row align-items-center justify-content-center featurette margins-cabecalho">
-            <div className="rounded col-md-4 order-2 order-md-1 text-center text-md-start">
+            <div className="rounded col-md-4 order-2 order-md-1 text-center text-md-start display-mobile">
                 <h1 className="lh-1">Fake Store API</h1>
                 <p className="lead" style={{ fontSize: '1rem' }}>
                     Fake store REST API for your e-commerce or shopping website prototype.
                 </p>
                 <a
-                    className="btn btn-lg button-github"
+                    className="btn btn-lg button-github mb-2"
                     href="https://github.com/keikaavousi/fake-store-api"
                     target="_blank"
                     rel="noopener noreferrer"
