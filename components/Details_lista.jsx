@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const Details_Lista = ({teste_details}) => {
     return(
-    <div lang="pt-br">
+    <>
         <div className="container mt-5 mb-5">
             <div className="row d-flex justify-content-center">
                 <div className="col-md-10">
@@ -39,6 +39,6 @@ export const Details_Lista = ({teste_details}) => {
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" />
-    </div>
+    </>
     )
 }

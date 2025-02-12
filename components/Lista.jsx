@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Lista = ({teste}) => {
     return(
-    <div lang="pt-br">
+    <>
         <section className="cards-edition">
         <div className="container-teste"> 
             <div className="container-teste mt-5">
@@ -250,6 +250,6 @@ export const Lista = ({teste}) => {
         </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" />
-    </div>
+    </>
     )
 }

@@ -5,11 +5,19 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body{
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+section {
+  overflow-x: hidden !important;
 }
 
 .container-teste{
@@ -29,9 +37,9 @@ body{
     margin-right: 10px;
 }
 
-.featurette .col-md-4{
-    margin-left: 430px;
-} 
+.offcanvas-backdrop.show {
+  opacity: .2 !important;
+}
 
 .ratings i{
     font-size: 16px;
@@ -106,6 +114,10 @@ a.page-number{
     color: #FFF;
 }
 /*Fim Navbar*/
+
+.margins-cabecalho {
+  margin-top: 4rem !important;
+}
 
 /*Cards Produtos Disponiveis*/
 .card-product{
@@ -372,13 +384,27 @@ a.page-number{
     font-size: 1rem;
  }
  
- @media(max-width:768px){
+ @media(max-width: 768px){
     .footer-wrap h3{
      margin-top: 27px;
     }
     .col-md-5 .featurette-image{
         display: flex;
         justify-content: center;
+    }
+    .margins-cabecalho {
+      margin-top: 2rem !important;
+    }
+    .lh-1 {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .lead {
+      text-align: center;
+    }
+    .button-github {
+      justify-content: center;
+      margin-bottom: 1rem;
     }
  }
  
@@ -397,18 +423,9 @@ a.page-number{
  }
 
  @media(max-width:483px){
-    .featurette .col-md-4{
-        margin-left: 20px;
-    }
     .btn-book{
         margin-top: 10px;
      }
- }
-
- @media(max-width:1669px){
-    .featurette .col-md-4{
-        margin-left: 230px;
-    }
  }
 
  @media(max-width:1469px){
@@ -429,12 +446,6 @@ a.page-number{
     .badge3 span{
       font-size: 0.7rem;
       width: 180px;
-    }
- }
-
-  @media(max-width:1192px){
-    .featurette .col-md-4{
-        margin-left: 200px;
     }
  }
 
@@ -468,9 +479,6 @@ a.page-number{
  }
 
   @media (max-width:768px){
-    .featurette .col-md-4{
-        margin-left: 10px;
-    }
     .btn-book{
         margin-top: 0;
      }
