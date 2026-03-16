@@ -53,13 +53,13 @@ export default function Home({users}) {
   )
 }
 
-export async function getServerSideProps(context){
-  const response = await axios.get(
-      'https://fakestoreapi.com/products'
-  );
-  const data = await response.data;
+// export async function getServerSideProps(context){
+//   const response = await axios.get(
+//       'https://fakestoreapi.com/products'
+//   );
+//   const data = await response.data;
 
-  return {
-      props: {users:data}, 
-  }
-}
+//   return {
+//       props: {users:data}, 
+//   }
+// }

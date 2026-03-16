@@ -62,30 +62,23 @@ function Profile({ user = {}, user_slider}) {
   )
 }
 
-export async function getStaticProps(context){
-    const response = await axios.get('https://fakestoreapi.com/products/' + context.params.id);
-    const user = await response.data;
-    const slider = await axios.get(
-        'https://fakestoreapi.com/products'
-    );
-    const user_slider = await slider.data;
-	return{
-		props: {user, user_slider},
-	}
-}
+export async function getServerSideProps(context) {
+  const { id } = context.params;
 
-export async function getStaticPaths(){
-	const response = await axios.get(
-		'https://fakestoreapi.com/products'
-	);
-	const users = await response.data;
-	const paths = users.map((user) => {
-		return {params: {id: String(user.id)}};
-	});
-	return{ 
-		paths,
-		fallback: true, 
-	};
+  const response = await axios.get(
+    `https://fakestoreapi.com/products/${id}`
+  );
+
+  const slider = await axios.get(
+    "https://fakestoreapi.com/products"
+  );
+
+  return {
+    props: {
+      user: response.data,
+      user_slider: slider.data
+    }
+  };
 }
 
 export default Profile;
