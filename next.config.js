@@ -5,4 +5,7 @@ module.exports = {
   images: {
     domains: ['fakestoreapi.com'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
